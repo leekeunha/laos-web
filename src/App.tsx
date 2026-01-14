@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import Router from './routes/Router.tsx';
 import { saveFcmTokenIntoLocalStorage } from './utils/storageUtils.ts';
 //import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-function App() {
-    const queryClient = new QueryClient();
 
+const queryClient = new QueryClient();
+
+function App() {
     useEffect(() => {
         saveFcmTokenIntoLocalStorage();
         console.log('Current environment:', import.meta.env.VITE_ENVIRONMENT);
@@ -18,4 +19,5 @@ function App() {
         </QueryClientProvider>
     );
 }
+
 export default App;

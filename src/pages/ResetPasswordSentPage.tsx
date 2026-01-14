@@ -22,8 +22,7 @@ export default function ResetPasswordSentPage() {
         formState: { errors },
     } = useForm();
     const { verifyCode, sendVerificationCode } = usePhoneVerification();
-    const { inputRefs, handleInput, handleKeyDown, handleFocus } =
-        useVerificationCodeInput(handleChange);
+    const { inputRefs, handleInput, handleKeyDown, handleFocus } = useVerificationCodeInput();
     const { resendTimer, isResendDisabled, initializeResendTimer } = useResendTimer(false);
     const navigate = useNavigate();
 

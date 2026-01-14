@@ -24,7 +24,7 @@ export const ALL = 'All';
 export const OLDEST_LABEL = 'Oldest';
 export const LATEST_LABEL = 'Latest';
 export const RECOMMENDED_LABEL = 'Recommended';
-export const HIGEPRICE_LABEL = 'High Price';
+export const HIGHPRICE_LABEL = 'High Price';
 export const LOWPRICE_LABEL = 'Low Price';
 
 export const MEMBER = 'Member';

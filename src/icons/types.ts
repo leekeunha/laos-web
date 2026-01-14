@@ -1,5 +1,5 @@
 export interface IconProps {
-    color?: string; //TODO : 삭제예정
+    color?: string;
     width?: number;
     height?: number;
     className?: string;

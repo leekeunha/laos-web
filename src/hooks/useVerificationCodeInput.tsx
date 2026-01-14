@@ -1,10 +1,8 @@
 import { useRef, FormEvent, KeyboardEvent, FocusEvent } from 'react';
 
-export default function useVerificationCodeInput(handleChange: () => void) {
+export default function useVerificationCodeInput() {
     const inputRefs = useRef(Array(6).fill(null));
 
-    //TODO: 불필요한 코드인데 테스트 후 삭제하기
-    console.log(handleChange);
     const handleInput = (e: FormEvent<HTMLInputElement>, index: number) => {
         const { value } = e.currentTarget;
         const isSingleDigit = /^[0-9]$/.test(value);

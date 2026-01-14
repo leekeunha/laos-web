@@ -1,7 +1,6 @@
 import { RemoteMyBank } from './RemoteMyBank';
 
 export class MyBank {
-    //TODO
     readonly #memberBankIdx: string;
     readonly #active: boolean;
     readonly #bankName: string;

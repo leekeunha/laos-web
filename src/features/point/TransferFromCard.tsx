@@ -11,7 +11,6 @@ export default function TransferFromCard() {
             <Card className="p-4 flex flex-col gap-4">
                 <SectionTitle title="Point" />
                 <div className="flex gap-2">
-                    {/* TODO: 아래 한줄 이름 바꾸기. */}
                     <RHFSelectWithIcons
                         label="Point Type"
                         name="pointType"
